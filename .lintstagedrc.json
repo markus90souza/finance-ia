@@ -1,6 +1,6 @@
 {
   "*.ts?(x)": [
     "eslint --fix --max-warnings=0",
-    "prettier --write"
+    "prettier --fix"
   ]
 }

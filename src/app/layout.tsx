@@ -1,22 +1,22 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next'
 
-import "@/styles/globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import { dark } from "@clerk/themes";
-import type { FC, ReactNode } from "react";
+import '@/styles/globals.css'
+import { ClerkProvider } from '@clerk/nextjs'
+import { dark } from '@clerk/themes'
+import type { FC, ReactNode } from 'react'
 
-import { Mulish } from "next/font/google";
+import { Mulish } from 'next/font/google'
 
-const mulish = Mulish({ subsets: ["latin-ext"] });
+const mulish = Mulish({ subsets: ['latin-ext'] })
 
 export const metadata: Metadata = {
-  title: "Finance.ai",
-  description: "",
-};
+  title: 'Finance.ai',
+  description: '',
+}
 
 type RootLayoutProps = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
@@ -31,7 +31,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
         </body>
       </html>
     </ClerkProvider>
-  );
-};
+  )
+}
 
-export default RootLayout;
+export default RootLayout

@@ -5,6 +5,10 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import type { FC, ReactNode } from "react";
 
+import { Mulish } from "next/font/google";
+
+const mulish = Mulish({ subsets: ["latin-ext"] });
+
 export const metadata: Metadata = {
   title: "Finance.ai",
   description: "",
@@ -22,7 +26,9 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
       }}
     >
       <html lang="en">
-        <body className={`dark antialiased`}>{children}</body>
+        <body className={`${mulish.className} dark antialiased`}>
+          {children}
+        </body>
       </html>
     </ClerkProvider>
   );

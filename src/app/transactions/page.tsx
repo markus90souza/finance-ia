@@ -10,7 +10,7 @@ const TransactionsPage = async () => {
     <div className="space-y-6 p-6">
       <header className="flex w-full items-center justify-between">
         <strong className="text-2xl font-bold">Transações</strong>
-        <Button className="gap-2">
+        <Button className="gap-2 font-bold">
           Adicionar transação
           <ArrowDownUp />
         </Button>

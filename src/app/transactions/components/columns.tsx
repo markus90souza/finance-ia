@@ -5,11 +5,12 @@ import { ColumnDef } from '@tanstack/react-table'
 
 import { TransactionBadge } from './transaction-badge'
 import { Button } from '@/components/ui/button'
-import { Pencil, Trash } from 'lucide-react'
+import { Trash } from 'lucide-react'
 import {
   TRANSACTION_CATEGORY_LABELS,
   TRANSACTION_PAYMENT_METHOD_LABELS,
 } from '@/constants'
+import { EditTransactionButton } from './edit-transaction-button'
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 // export type Payment = {
@@ -89,16 +90,10 @@ export const transactionsColumns: ColumnDef<Transaction>[] = [
   {
     accessorKey: 'actions',
     header: '',
-    cell() {
+    cell({ row: { original: trasaction } }) {
       return (
         <div className="space-x-1">
-          <Button
-            variant="ghost"
-            size={'icon'}
-            className="text-muted-foreground"
-          >
-            <Pencil />
-          </Button>
+          <EditTransactionButton transaction={trasaction} />
 
           <Button
             variant="ghost"

@@ -1,5 +1,5 @@
 import { Badge } from '@/components/ui/badge'
-import type { TransactionType } from '@prisma/client'
+import { TransactionType } from '@prisma/client'
 import { CircleIcon } from 'lucide-react'
 import type { FC } from 'react'
 

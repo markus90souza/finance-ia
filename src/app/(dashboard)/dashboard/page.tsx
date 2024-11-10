@@ -9,19 +9,22 @@ import { TimeSelect } from './components/time-select'
 import { TransactionsPieChart } from './components/transaction-pie-chart'
 import { getDashboard } from '@/data/get-dashboard'
 
+// interface DashboardProps  {
+//   searchParams: {
+//     month: string
+//   }
+// }
+
 interface DashboardProps {
-  searchParams: {
-    month: string
-  }
+  searchParams: Promise<{ [key: string]: string }>
 }
 
-const DashboardPage: FC<DashboardProps> = async ({
-  searchParams: { month },
-}) => {
+const DashboardPage: FC<DashboardProps> = async ({ searchParams }) => {
   const { userId } = await auth()
   if (!userId) {
     redirect('/login')
   }
+  const { month } = await searchParams
   const monthIsInvalid = !month || !isMatch(month, 'MM')
   if (monthIsInvalid) {
     redirect(`?month=${new Date().getMonth() + 1}`)

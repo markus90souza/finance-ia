@@ -18,7 +18,7 @@ type RootLayoutProps = {
   children: ReactNode
 }
 
-const RootLayout: FC<RootLayoutProps> = ({ children }) => {
+const RootLayout: FC<RootLayoutProps> = async ({ children }) => {
   return (
     <ClerkProvider
       appearance={{

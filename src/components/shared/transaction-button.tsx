@@ -2,7 +2,7 @@
 import { ArrowDownUp } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-import { TransactionForm } from '@/app/transactions/components/transaction-form'
+import { TransactionForm } from '@/app/(dashboard)/transactions/components/transaction-form'
 import { useState } from 'react'
 
 const TransactionButton = () => {

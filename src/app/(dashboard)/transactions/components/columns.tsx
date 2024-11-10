@@ -11,6 +11,7 @@ import {
   TRANSACTION_PAYMENT_METHOD_LABELS,
 } from '@/constants'
 import { EditTransactionButton } from './edit-transaction-button'
+import { formatCurrency } from '@/utils/currency'
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 // export type Payment = {
@@ -81,10 +82,7 @@ export const transactionsColumns: ColumnDef<Transaction>[] = [
         original: { amount },
       },
     }) {
-      return new Intl.NumberFormat('pt-BR', {
-        style: 'currency',
-        currency: 'BRL',
-      }).format(Number(amount))
+      return formatCurrency(Number(amount))
     },
   },
   {

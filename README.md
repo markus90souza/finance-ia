@@ -1,5 +1,10 @@
 <h1 align="center">
-  <img alt="GamePlay" height="80" title="Plant Manager" src=".github/logo.png" />
+  <img 
+    alt="FinanceIA" 
+    height="80" 
+    title="Plant Manager" 
+    src=".github/logo.png"
+  />
 </h1>
 
 <p align="center">
@@ -17,23 +22,15 @@ Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jog
 
 ## ✨ Tecnologias
 
--   [ ] React Native
+-   [ ] React JS
 -   [ ] Typescript
--   [ ] Expo
+-   [ ] NextJS 15
 -   [ ] Context API
--   [ ] Async Storage
--   [ ] Vector Icons
--   [ ] React Native Svg e Svg Transform
--   [ ] Axios
--   [ ] Gradient colors
--   [ ] OAuth2 Discord 
--   [ ] Expo Google Fonts
--   [ ] React Navigation Stack
--   [ ] React Native Gesture Handler
--   [ ] Expo Authentication
--   [ ] React Native Share
--   [ ] Deep Link
-
+-   [ ] Clerk (Auth)
+-   [ ] Tailwind CSS
+-   [ ] ShadcnUI
+-   [ ] Stripe (Gateway de Pagamentos)
+-   [ ] ChatGPT API
 
 ## :hammer_and_wrench: Features 
 
@@ -50,7 +47,7 @@ Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jog
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/991338130828322960). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/design/ndIZ9nevfZZCMxCL4lZxfQ/FSW-Finance-(LIVE)?node-id=264-1627&node-type=canvas&t=apkM0WqyR6RMQDqu-0). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
 
 
 ## Executando o projeto

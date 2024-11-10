@@ -48,7 +48,6 @@ const DatePicker: React.FC<DatePickerProps> = ({ onChange, date }) => {
           mode="single"
           selected={date}
           onSelect={onChange}
-          initialFocus
           locale={ptBR}
         />
       </PopoverContent>

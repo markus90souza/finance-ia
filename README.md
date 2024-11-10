@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">
+  <img alt="GamePlay" height="80" title="Plant Manager" src=".github/logo.png" />
+</h1>
 
-## Getting Started
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=E51C44&labelColor=0A1033">
 
-First, run the development server:
+ <img src="https://img.shields.io/static/v1?label=NLW&message=06&color=E51C44&labelColor=0A1033" alt="NLW 06" />
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+![cover](.github/cover.png?style=flat)
+
+
+## 💻 Projeto
+Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jogar com os amigos. Crie grupos para jogar seus games favoritos com seus amigos com esse App que possui autenticação com Discord.
+
+## ✨ Tecnologias
+
+-   [ ] React Native
+-   [ ] Typescript
+-   [ ] Expo
+-   [ ] Context API
+-   [ ] Async Storage
+-   [ ] Vector Icons
+-   [ ] React Native Svg e Svg Transform
+-   [ ] Axios
+-   [ ] Gradient colors
+-   [ ] OAuth2 Discord 
+-   [ ] Expo Google Fonts
+-   [ ] React Navigation Stack
+-   [ ] React Native Gesture Handler
+-   [ ] Expo Authentication
+-   [ ] React Native Share
+-   [ ] Deep Link
+
+
+## :hammer_and_wrench: Features 
+
+-   [ ] Autenticação Social OAuth2 com servidor do Discord.
+-   [ ] Obtém perfil do usuário cadastro no Discord (username e avatar);
+-   [ ] Lista os servidores do Discord que o usuário faz parte;
+-   [ ] Permite realizar o agendamento de partidas;
+-   [ ] Permite filtrar as partidas por categoria;
+-   [ ] Exibe se a partida foi agendada em um servidor próprio (anfitrião) ou em servidores de outros (convidado);
+-   [ ] Compartilha o convite para ingressar no servidor do usuário;
+-   [ ] Permite redirecionar o usuário para o seu próprio servidor;
+-   [ ] Disponibiliza a função de Logout.
+
+
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/991338130828322960). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
+
+
+## Executando o projeto
+
+Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
+Em seguida, inicie o projeto.
+
+```cl
+expo start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Lembre-se de criar o seu App no servidor do Discord para obter as credencias de autenticação. Em seguida, defina no arquivo .env as configurações do seu App (remova o example do arquivo .env.example).
+ 
+ ```cl
+REDIRECT_URI=
+SCOPE=
+RESPONSE_TYPE=
+CLIENT_ID=
+CDN_IMAGE=
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 Licença
 
-## Learn More
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-To learn more about Next.js, take a look at the following resources:
+<br />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!--START_SECTION:footer-->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<br />
+<br />
 
-## Deploy on Vercel
+<p align="center">
+  <a href="https://discord.gg/rocketseat" target="_blank">
+    <img align="center" src="https://storage.googleapis.com/golden-wind/comunidade/rodape.svg" alt="banner"/>
+  </a>
+</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<!--END_SECTION:footer-->
